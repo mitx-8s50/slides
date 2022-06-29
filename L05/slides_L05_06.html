@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<!-- from https://www.w3docs.com/snippets/css/how-to-create-an-image-slider-or-slideshow.html#slide-1
+
+AND
+
+https://frontendscript.com/html-slideshow-code-without-javascript/
+  -->
+  <head>
+    <title>Image Slider</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      a.prev,a.next {
+        height:488px;
+        position:absolute;
+        width:43px;
+        top:0%;
+        margin-top:0px;
+        opacity:0;
+        text-indent:-99999px;
+        cursor:pointer;
+        -webkit-transition:opacity 200ms ease-out;
+      }
+      a.prev:hover,a.next:hover {
+        opacity:0.6;
+      }
+      .prev {
+        left:0;
+        background: #000 url('https://mitx-8s50.github.io/slides/arrows.png') no-repeat -200px 230px;
+      }
+      .next {
+        right:0;
+        background: #000 url('https://mitx-8s50.github.io/slides/arrows.png') no-repeat -167px 230px;
+      }
+      .slide-text {
+        text-align: left;
+        font-size: 10;
+        margin: 1rem
+
+      }
+      .slider {
+        width: 875px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .slides {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+      }
+      .slides::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+      .slides::-webkit-scrollbar-thumb {
+        background: #666;
+        border-radius: 10px;
+      }
+      .slides::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .slides > div {
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        width: 875px;
+        height: 489.5px;
+        margin-right: 50px;
+        border-radius: 0px;
+        background: #eee;
+        border: 1px solid #555;
+        transform-origin: center center;
+        transform: scale(1);
+        transition: transform 0.5s;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .slider > a {
+        display: inline-flex;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: white;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0.5rem 0 0 0;
+        position: relative;
+      }
+      .slider > a:active {
+        top: 1px;
+        color: #1c87c9;
+      }
+      .slider > a:focus {
+        background: #eee;
+      }
+      /* Don't need button navigation */
+      @supports (scroll-snap-type) {
+        .slider > a {
+          display: none;
+        }
+      }
+      html,
+      body {
+        height: 100%;
+        overflow: hidden;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        font-family: 'Ropa Sans', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+      <!--insert slides here-->
+      <div class="slides">
+        <div id="slide-1">
+        <img src="https://mitx-8s50.github.io/slides/L05/L04_slides/PCH_Lecture4_8S50_v2_Page_19.jpg" style="width:650px;">
+          <div class="slide-text">
+            <h3>Slide 1</h3>
+            <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
+          </div>
+          <a class="prev" href="#slide-2">prev</a>
+          <a class="next" href="#slide-2">next</a>
+        </div>
+
+        <div id="slide-2">
+        <img src="https://mitx-8s50.github.io/slides/L05/L04_slides/PCH_Lecture4_8S50_v2_Page_20.jpg" style="width:650px;">
+          <div class="slide-text">
+            <h3>Slide 2</h3>
+            <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
+          </div>
+          <a class="prev" href="#slide-1">prev</a>
+          <a class="next" href="#slide-1">next</a>
+        </div>
+
+      </div>
+      <!--links to slides-->
+      <a href="#slide-1">1</a>
+      <a href="#slide-2">2</a>
+    </div>
+  </body>
+</html>
