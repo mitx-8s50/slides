@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<!-- from https://www.w3docs.com/snippets/css/how-to-create-an-image-slider-or-slideshow.html#slide-1
+<!-- Parts of this code are adapted from the following sources: 
+
+https://www.w3docs.com/snippets/css/how-to-create-an-image-slider-or-slideshow.html#slide-1
 
 AND
 
@@ -12,19 +14,26 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
       * {
         box-sizing: border-box;
       }
+      .slidenumber {
+        color: #000;
+        opacity: 0.7;
+        position:absolute;
+        bottom: 14px;
+        right: 50px
+      }
       a.prev,a.next {
         height:488px;
         position:absolute;
         width:43px;
         top:0%;
         margin-top:0px;
-        opacity:0;
+        opacity:0.1;
         text-indent:-99999px;
         cursor:pointer;
         -webkit-transition:opacity 200ms ease-out;
       }
       a.prev:hover,a.next:hover {
-        opacity:0.6;
+        opacity:0.7;
       }
       .prev {
         left:0;
@@ -124,7 +133,10 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
       <!--insert slides here-->
       <div class="slides">
         <div id="slide-1">
-          <img src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Slide12.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 1
+        </div>
+          <img alt="Slide 1: time-frequency analysis." src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Slide12.jpeg" style="width:650px;">
           <!--
           <div class="slide-text">
             <h3>Slide 1</h3>
@@ -134,8 +146,12 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
           <a class="prev" href="#slide-9">prev</a>
           <a class="next" href="#slide-2">next</a>
         </div>
+
         <div id="slide-2">
-          <img src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Slide13.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 2
+        </div>
+          <img alt="Slide 2: time-frequency localization." src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Slide13.jpeg" style="width:650px;">
           <!--
           <div class="slide-text">
             <h3>Slide 2</h3>
@@ -145,8 +161,12 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
           <a class="prev" href="#slide-1">prev</a>
           <a class="next" href="#slide-3">next</a>
         </div>
+
         <div id="slide-3">
-          <img src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Slide14.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 3
+        </div>
+          <img alt="Slide 3: definition of Fourier pair." src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Slide14.jpeg" style="width:650px;">
           <!--
           <div class="slide-text">
             <h3>Slide 3</h3>
@@ -156,8 +176,12 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
           <a class="prev" href="#slide-2">prev</a>
           <a class="next" href="#slide-4">next</a>
         </div>
+
         <div id="slide-4">
-          <img src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Untitled.gif" style="width:650px;">
+        <div class="slidenumber">
+        Slide 4
+        </div>
+          <img alt="Slide 4: gif of normal mode oscillation." src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Untitled.gif" style="width:650px;">
           <!--
           <div class="slide-text">
             <h3>Slide 4</h3>
@@ -167,8 +191,12 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
           <a class="prev" href="#slide-3">prev</a>
           <a class="next" href="#slide-5">next</a>
         </div>
+
         <div id="slide-5">
-          <img src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Slide16.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 5
+        </div>
+          <img alt="Slide 5: the Q-transform." src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Slide16.jpeg" style="width:650px;">
           <!--
           <div class="slide-text">
             <h3>Slide 5</h3>
@@ -178,8 +206,12 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
           <a class="prev" href="#slide-4">prev</a>
           <a class="next" href="#slide-6">next</a>
         </div>
+
         <div id="slide-6">
-          <img src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Slide17.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 6
+        </div>
+          <img alt="Slide 6: example of Athen's traffic noise signal." src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Slide17.jpeg" style="width:650px;">
           <!--
           <div class="slide-text">
             <h3>Slide 6</h3>
@@ -189,8 +221,12 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
           <a class="prev" href="#slide-5">prev</a>
           <a class="next" href="#slide-7">next</a>
         </div>
+
         <div id="slide-7">
-          <img src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Slide18.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 7
+        </div>
+          <img alt="Slide 7: distinct signature of signal in noise sample." src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Slide18.jpeg" style="width:650px;">
           <!--
           <div class="slide-text">
             <h3>Slide 7</h3>
@@ -200,8 +236,12 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
           <a class="prev" href="#slide-6">prev</a>
           <a class="next" href="#slide-8">next</a>
         </div>
+
         <div id="slide-8">
-          <img src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Slide19.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 8
+        </div>
+          <img alt="Slide 8: frequency spectrum of signal in noisy sample." src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Slide19.jpeg" style="width:650px;">
           <!--
           <div class="slide-text">
             <h3>Slide 8</h3>
@@ -211,8 +251,12 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
           <a class="prev" href="#slide-7">prev</a>
           <a class="next" href="#slide-9">next</a>
         </div>
+
         <div id="slide-9">
-          <img src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Slide20.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 9
+        </div>
+          <img alt="Slide 9: signal buried in noise." src="https://mitx-8s50.github.io/slides/L03/PCH_Lecture2_LigoAnims_8S50/Slide20.jpeg" style="width:650px;">
           <!--
           <div class="slide-text">
             <h3>Slide 9</h3>

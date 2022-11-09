@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
-<!-- from https://www.w3docs.com/snippets/css/how-to-create-an-image-slider-or-slideshow.html#slide-1
+<!-- Parts of this code are adapted from the following sources: 
+
+https://www.w3docs.com/snippets/css/how-to-create-an-image-slider-or-slideshow.html#slide-1
+
+AND
+
+https://frontendscript.com/html-slideshow-code-without-javascript/
   -->
   <head>
     <title>Image Slider</title>
@@ -8,19 +14,26 @@
       * {
         box-sizing: border-box;
       }
+      .slidenumber {
+        color: #000;
+        opacity: 0.7;
+        position:absolute;
+        bottom: 14px;
+        right: 50px
+      }
       a.prev,a.next {
         height:488px;
         position:absolute;
         width:43px;
         top:0%;
         margin-top:0px;
-        opacity:0;
+        opacity:0.1;
         text-indent:-99999px;
         cursor:pointer;
         -webkit-transition:opacity 200ms ease-out;
       }
       a.prev:hover,a.next:hover {
-        opacity:0.6;
+        opacity:0.7;
       }
       .prev {
         left:0;
@@ -34,7 +47,6 @@
         text-align: left;
         font-size: 10;
         margin: 1rem
-
       }
       .slider {
         width: 875px;
@@ -119,9 +131,11 @@
     <div class="slider">
       <!--insert slides here-->
       <div class="slides">
-        
         <div id="slide-1">
-        <img src="https://mitx-8s50.github.io/slides/L01/PCH_Lecture1_8S50/PCH_Lecture1_8S50.050.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 1
+        </div>
+        <img alt="Slide 1: definition of probability density functions." src="https://mitx-8s50.github.io/slides/L01/PCH_Lecture1_8S50/PCH_Lecture1_8S50.050.jpeg" style="width:650px;">
         <!--
           <div class="slide-text">
             <h3>Slide 1</h3>
@@ -133,7 +147,10 @@
         </div>
 
         <div id="slide-2">
-        <img src="https://mitx-8s50.github.io/slides/L01/PCH_Lecture1_8S50/PCH_Lecture1_8S50.051.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 2
+        </div>
+        <img alt="Slide 2: definition of cumulative distribution functions." src="https://mitx-8s50.github.io/slides/L01/PCH_Lecture1_8S50/PCH_Lecture1_8S50.051.jpeg" style="width:650px;">
         <!--
         <div class="slide-text">
             <h3>Slide 2</h3>
@@ -145,7 +162,10 @@
         </div>
 
         <div id="slide-3">
-        <img src="https://mitx-8s50.github.io/slides/L01/PCH_Lecture1_8S50/PCH_Lecture1_8S50.052.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 3
+        </div>
+        <img alt="Slide 3: definition of expectation of random variable." src="https://mitx-8s50.github.io/slides/L01/PCH_Lecture1_8S50/PCH_Lecture1_8S50.052.jpeg" style="width:650px;">
         <!--
         <div class="slide-text">
             <h3>Slide 3</h3>
@@ -157,7 +177,10 @@
         </div>
 
         <div id="slide-4">
-        <img src="https://mitx-8s50.github.io/slides/L01/PCH_Lecture1_8S50/PCH_Lecture1_8S50.053.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 4
+        </div>
+        <img alt="Slide 4: expectation value mathematical definition." src="https://mitx-8s50.github.io/slides/L01/PCH_Lecture1_8S50/PCH_Lecture1_8S50.053.jpeg" style="width:650px;">
         <!--
         <div class="slide-text">
             <h3>Slide 4</h3>
@@ -169,7 +192,10 @@
         </div>
 
         <div id="slide-5">
-        <img src="https://mitx-8s50.github.io/slides/L01/PCH_Lecture1_8S50/PCH_Lecture1_8S50.054.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 5
+        </div>
+        <img alt="Slide 5: definition of variance of random variable." src="https://mitx-8s50.github.io/slides/L01/PCH_Lecture1_8S50/PCH_Lecture1_8S50.054.jpeg" style="width:650px;">
         <!--
         <div class="slide-text">
             <h3>Slide 5</h3>
@@ -181,7 +207,10 @@
         </div>
 
         <div id="slide-6">
-        <img src="https://mitx-8s50.github.io/slides/L01/PCH_Lecture1_8S50/PCH_Lecture1_8S50.055.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 6
+        </div>
+        <img alt="Slide 6: variance mathematical definition." src="https://mitx-8s50.github.io/slides/L01/PCH_Lecture1_8S50/PCH_Lecture1_8S50.055.jpeg" style="width:650px;">
         <!--
         <div class="slide-text">
             <h3>Slide 6</h3>
@@ -193,7 +222,10 @@
         </div>
 
         <div id="slide-7">
-        <img src="https://mitx-8s50.github.io/slides/L01/PCH_Lecture1_8S50/PCH_Lecture1_8S50.056.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 7
+        </div>
+        <img alt="Slide 7: variance and standard deviation." src="https://mitx-8s50.github.io/slides/L01/PCH_Lecture1_8S50/PCH_Lecture1_8S50.056.jpeg" style="width:650px;">
         <!--
         <div class="slide-text">
             <h3>Slide 7</h3>

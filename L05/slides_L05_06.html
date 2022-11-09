@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<!-- from https://www.w3docs.com/snippets/css/how-to-create-an-image-slider-or-slideshow.html#slide-1
+<!-- Parts of this code are adapted from the following sources: 
+
+https://www.w3docs.com/snippets/css/how-to-create-an-image-slider-or-slideshow.html#slide-1
 
 AND
 
@@ -12,19 +14,26 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
       * {
         box-sizing: border-box;
       }
+      .slidenumber {
+        color: #000;
+        opacity: 0.7;
+        position:absolute;
+        bottom: 14px;
+        right: 50px
+      }
       a.prev,a.next {
         height:488px;
         position:absolute;
         width:43px;
         top:0%;
         margin-top:0px;
-        opacity:0;
+        opacity:0.1;
         text-indent:-99999px;
         cursor:pointer;
         -webkit-transition:opacity 200ms ease-out;
       }
       a.prev:hover,a.next:hover {
-        opacity:0.6;
+        opacity:0.7;
       }
       .prev {
         left:0;
@@ -124,7 +133,10 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
       <!--insert slides here-->
       <div class="slides">
         <div id="slide-1">
-        <img src="https://mitx-8s50.github.io/slides/L05/L04_slides/PCH_Lecture4_8S50_v2_Page_19.jpg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 1
+        </div>
+        <img alt="Slide 1: how do we quantify asymmetry, high energy bins." src="https://mitx-8s50.github.io/slides/L05/L04_slides/PCH_Lecture4_8S50_v2_Page_19.jpg" style="width:650px;">
         <!--
           <div class="slide-text">
             <h3>Slide 1</h3>
@@ -136,7 +148,10 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
         </div>
 
         <div id="slide-2">
-        <img src="https://mitx-8s50.github.io/slides/L05/L04_slides/PCH_Lecture4_8S50_v2_Page_20.jpg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 2
+        </div>
+        <img alt="Slide 2: how do we quantify asymmetry, low energy bins." src="https://mitx-8s50.github.io/slides/L05/L04_slides/PCH_Lecture4_8S50_v2_Page_20.jpg" style="width:650px;">
         <!--
           <div class="slide-text">
             <h3>Slide 2</h3>
