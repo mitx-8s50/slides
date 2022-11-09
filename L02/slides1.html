@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
-<!-- from https://www.w3docs.com/snippets/css/how-to-create-an-image-slider-or-slideshow.html#slide-1
+<!-- Parts of this code are adapted from the following sources: 
+
+https://www.w3docs.com/snippets/css/how-to-create-an-image-slider-or-slideshow.html#slide-1
+
+AND
+
+https://frontendscript.com/html-slideshow-code-without-javascript/
   -->
   <head>
     <title>Image Slider</title>
@@ -8,19 +14,26 @@
       * {
         box-sizing: border-box;
       }
+      .slidenumber {
+        color: #000;
+        opacity: 0.7;
+        position:absolute;
+        bottom: 14px;
+        right: 50px
+      }
       a.prev,a.next {
         height:488px;
         position:absolute;
         width:43px;
         top:0%;
         margin-top:0px;
-        opacity:0;
+        opacity:0.1;
         text-indent:-99999px;
         cursor:pointer;
         -webkit-transition:opacity 200ms ease-out;
       }
       a.prev:hover,a.next:hover {
-        opacity:0.6;
+        opacity:0.7;
       }
       .prev {
         left:0;
@@ -120,7 +133,10 @@
       <!--insert slides here-->
       <div class="slides">
         <div id="slide-1">
-        <img src="https://mitx-8s50.github.io/slides/L02/PCH_Lecture2_8S50/PCH_Lecture2_8S50.004.jpeg" style="width:650px;" alt="Here are some words describing the slide. Is this readable? It's just alt text.">
+        <div class="slidenumber">
+        Slide 1
+        </div>
+        <img alt="Slide 1: image of binomial equation" src="https://mitx-8s50.github.io/slides/L02/PCH_Lecture2_8S50/PCH_Lecture2_8S50.004.jpeg" style="width:650px;" alt="Here are some words describing the slide. Is this readable? It's just alt text.">
         <!--
           <div class="slide-text">
             <h3>Slide 1</h3>
@@ -130,8 +146,12 @@
           <a class="prev" href="#slide-8">prev</a>
           <a class="next" href="#slide-2">next</a>
         </div>
+
         <div id="slide-2">
-        <img src="https://mitx-8s50.github.io/slides/L02/PCH_Lecture2_8S50/PCH_Lecture2_8S50.005.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 2
+        </div>
+        <img alt="Slide 2: image of binomial equation" src="https://mitx-8s50.github.io/slides/L02/PCH_Lecture2_8S50/PCH_Lecture2_8S50.005.jpeg" style="width:650px;">
         <!--
           <div class="slide-text">
             <h3>Slide 2</h3>
@@ -141,8 +161,12 @@
           <a class="prev" href="#slide-1">prev</a>
           <a class="next" href="#slide-3">next</a>
         </div>
+
         <div id="slide-3">
-        <img src="https://mitx-8s50.github.io/slides/L02/PCH_Lecture2_8S50/PCH_Lecture2_8S50.006.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 3
+        </div>
+        <img alt="Slide 3: binomial distribution definition" src="https://mitx-8s50.github.io/slides/L02/PCH_Lecture2_8S50/PCH_Lecture2_8S50.006.jpeg" style="width:650px;">
         <!--
         <div class="slide-text">
             <h3>Slide 3</h3>
@@ -152,8 +176,12 @@
           <a class="prev" href="#slide-2">prev</a>
           <a class="next" href="#slide-4">next</a>
         </div>
+
         <div id="slide-4">
-        <img src="https://mitx-8s50.github.io/slides/L02/PCH_Lecture2_8S50/PCH_Lecture2_8S50.007.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 4
+        </div>
+        <img alt="Slide 4: error propagation" src="https://mitx-8s50.github.io/slides/L02/PCH_Lecture2_8S50/PCH_Lecture2_8S50.007.jpeg" style="width:650px;">
         <!--
           <div class="slide-text">
             <h3>Slide 4</h3>
@@ -163,8 +191,12 @@
           <a class="prev" href="#slide-3">prev</a>
           <a class="next" href="#slide-5">next</a>
         </div>
+
         <div id="slide-5">
-        <img src="https://mitx-8s50.github.io/slides/L02/PCH_Lecture2_8S50/PCH_Lecture2_8S50.008.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 5
+        </div>
+        <img alt="Slide 5: uncertainty in two variables" src="https://mitx-8s50.github.io/slides/L02/PCH_Lecture2_8S50/PCH_Lecture2_8S50.008.jpeg" style="width:650px;">
         <!--
           <div class="slide-text">
             <h3>Slide 5</h3>
@@ -174,8 +206,12 @@
           <a class="prev" href="#slide-4">prev</a>
           <a class="next" href="#slide-6">next</a>
         </div>
+
         <div id="slide-6">
-        <img src="https://mitx-8s50.github.io/slides/L02/PCH_Lecture2_8S50/PCH_Lecture2_8S50.009.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 6
+        </div>
+        <img alt="Slide 6: dealing with uncertainties, collider example" src="https://mitx-8s50.github.io/slides/L02/PCH_Lecture2_8S50/PCH_Lecture2_8S50.009.jpeg" style="width:650px;">
         <!--
           <div class="slide-text">
             <h3>Slide 6</h3>
@@ -185,8 +221,12 @@
           <a class="prev" href="#slide-5">prev</a>
           <a class="next" href="#slide-7">next</a>
         </div>
+
         <div id="slide-7">
-        <img src="https://mitx-8s50.github.io/slides/L02/PCH_Lecture2_8S50/PCH_Lecture2_8S50.010.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 7
+        </div>
+        <img alt="Slide 7: time-varying signal and uncertainty" src="https://mitx-8s50.github.io/slides/L02/PCH_Lecture2_8S50/PCH_Lecture2_8S50.010.jpeg" style="width:650px;">
         <!--
           <div class="slide-text">
             <h3>Slide 7</h3>
@@ -196,8 +236,12 @@
           <a class="prev" href="#slide-6">prev</a>
           <a class="next" href="#slide-8">next</a>
         </div>
+
         <div id="slide-8">
-        <img src="https://mitx-8s50.github.io/slides/L02/PCH_Lecture2_8S50/PCH_Lecture2_8S50.011.jpeg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 8
+        </div>
+        <img alt="Slide 8: things that affect collider signal" src="https://mitx-8s50.github.io/slides/L02/PCH_Lecture2_8S50/PCH_Lecture2_8S50.011.jpeg" style="width:650px;">
         <!--
           <div class="slide-text">
             <h3>Slide 8</h3>
