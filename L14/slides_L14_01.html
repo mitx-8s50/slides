@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<!-- from https://www.w3docs.com/snippets/css/how-to-create-an-image-slider-or-slideshow.html#slide-1
+<!-- Parts of this code are adapted from the following sources: 
+
+https://www.w3docs.com/snippets/css/how-to-create-an-image-slider-or-slideshow.html#slide-1
 
 AND
 
@@ -12,26 +14,34 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
       * {
         box-sizing: border-box;
       }
+      .slidenumber {
+        color: #000;
+        opacity: 0.7;
+        position:absolute;
+        bottom: 14px;
+        right: 50px
+      }
       a.prev,a.next {
         height:488px;
         position:absolute;
-        width:43px;
         top:0%;
         margin-top:0px;
-        opacity:0;
+        opacity:0.1;
         text-indent:-99999px;
         cursor:pointer;
         -webkit-transition:opacity 200ms ease-out;
       }
       a.prev:hover,a.next:hover {
-        opacity:0.6;
+        opacity:0.7;
       }
       .prev {
         left:0;
+        width:44px;
         background: #000 url('https://mitx-8s50.github.io/slides/arrows.png') no-repeat -200px 230px;
       }
       .next {
         right:0;
+        width:43px;
         background: #000 url('https://mitx-8s50.github.io/slides/arrows.png') no-repeat -167px 230px;
       }
       .slide-text {
@@ -124,56 +134,86 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
       <!--insert slides here-->
       <div class="slides">
         <div id="slide-1">
-        <img src="https://mitx-8s50.github.io/slides/L14/L10_slides/mit_8S50_deeplearning_Page_20.jpg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 1
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L14/L10_slides/mit_8S50_deeplearning_Page_20.jpg" style="width:650px;">
+          <!--
           <div class="slide-text">
             <h3>Slide 1</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
-          <a class="prev" href="#slide-5">previous</a>
+        -->
+          <a class="prev" href="#slide-6">previous</a>
           <a class="next" href="#slide-2">next</a>
         </div>
 
         <div id="slide-2">
-        <img src="https://mitx-8s50.github.io/slides/L14/L10_slides/mit_8S50_deeplearning_Page_21.jpg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 2
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L14/L10_slides/mit_8S50_deeplearning_Page_21.jpg" style="width:650px;">
+          <!--
           <div class="slide-text">
             <h3>Slide 2</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-1">previous</a>
           <a class="next" href="#slide-3">next</a>
         </div>
 
         <div id="slide-3">
-        <img src="https://mitx-8s50.github.io/slides/L14/L10_slides/mit_8S50_deeplearning_Page_22.jpg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 3
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L14/L10_slides/mit_8S50_deeplearning_Page_22.jpg" style="width:650px;">
+          <!--
           <div class="slide-text">
             <h3>Slide 3</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-2">previous</a>
           <a class="next" href="#slide-4">next</a>
         </div>
 
         <div id="slide-4">
-        <img src="https://mitx-8s50.github.io/slides/L14/L10_slides/mit_8S50_deeplearning_Page_23.jpg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 4
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L14/L10_slides/mit_8S50_deeplearning_Page_23.jpg" style="width:650px;">
+          <!--
           <div class="slide-text">
             <h3>Slide 4</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-3">previous</a>
           <a class="next" href="#slide-5">next</a>
         </div>
 
 
         <div id="slide-5">
-        <img src="https://mitx-8s50.github.io/slides/L14/L10_slides/mit_8S50_deeplearning_Page_24.jpg" style="width:650px;">
+        <div class="slidenumber">
+        Slide 5
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L14/L10_slides/mit_8S50_deeplearning_Page_24.jpg" style="width:650px;">
+          <!--
           <div class="slide-text">
             <h3>Slide 5</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-4">previous</a>
-          <a class="next" href="#slide-1">next</a>
+          <a class="next" href="#slide-6">next</a>
         </div>
 
+        <div id="slide-6">
+        <img alt="image sources" src="https://mitx-8s50.github.io/slides/L0_00_ref.png" style="width:786px;">
+          <a class="prev" href="#slide-5">previous</a>
+          <a class="next" href="#slide-1">next</a>
+        </div>
       </div>
       <!--links to slides-->
       <a href="#slide-1">1</a>
@@ -181,6 +221,7 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
       <a href="#slide-3">3</a>
       <a href="#slide-4">4</a>
       <a href="#slide-5">5</a>
+      <a href="#slide-6">ref</a>
     </div>
   </body>
 </html>

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<!-- from https://www.w3docs.com/snippets/css/how-to-create-an-image-slider-or-slideshow.html#slide-1
+<!-- Parts of this code are adapted from the following sources: 
+
+https://www.w3docs.com/snippets/css/how-to-create-an-image-slider-or-slideshow.html#slide-1
 
 AND
 
@@ -12,26 +14,34 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
       * {
         box-sizing: border-box;
       }
+      .slidenumber {
+        color: #000;
+        opacity: 0.7;
+        position:absolute;
+        bottom: 14px;
+        right: 50px
+      }
       a.prev,a.next {
         height:488px;
         position:absolute;
-        width:43px;
         top:0%;
         margin-top:0px;
-        opacity:0;
+        opacity:0.1;
         text-indent:-99999px;
         cursor:pointer;
         -webkit-transition:opacity 200ms ease-out;
       }
       a.prev:hover,a.next:hover {
-        opacity:0.6;
+        opacity:0.7;
       }
       .prev {
         left:0;
+        width:44px;
         background: #000 url('https://mitx-8s50.github.io/slides/arrows.png') no-repeat -200px 230px;
       }
       .next {
         right:0;
+        width:43px;
         background: #000 url('https://mitx-8s50.github.io/slides/arrows.png') no-repeat -167px 230px;
       }
       .slide-text {
@@ -124,383 +134,571 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
       <!--insert slides here-->
       <div class="slides">
         <div id="slide-1">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_061.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 1
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_061.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 1</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
-          <a class="prev" href="#slide-42">previous</a>
+        -->
+          <a class="prev" href="#slide-43">previous</a>
           <a class="next" href="#slide-2">next</a>
         </div>
 
         <div id="slide-2">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_062.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 2
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_062.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 2</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-1">previous</a>
           <a class="next" href="#slide-3">next</a>
         </div>
 
         <div id="slide-3">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_063.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 3
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_063.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 3</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-2">previous</a>
           <a class="next" href="#slide-4">next</a>
         </div>
 
         <div id="slide-4">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_064.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 4
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_064.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 4</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-3">previous</a>
           <a class="next" href="#slide-5">next</a>
         </div>
 
         <div id="slide-5">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_065.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 5
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_065.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 5</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-4">previous</a>
           <a class="next" href="#slide-6">next</a>
         </div>
 
         <div id="slide-6">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_066.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 6
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_066.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 6</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-5">previous</a>
           <a class="next" href="#slide-7">next</a>
         </div>
 
         <div id="slide-7">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_067.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 7
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_067.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 7</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-6">previous</a>
           <a class="next" href="#slide-8">next</a>
         </div>
 
         <div id="slide-8">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_068.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 8
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_068.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 8</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-7">previous</a>
           <a class="next" href="#slide-9">next</a>
         </div>
 
         <div id="slide-9">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_069.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 9
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_069.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 9</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-8">previous</a>
           <a class="next" href="#slide-10">next</a>
         </div>
 
         <div id="slide-10">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_070.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 10
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_070.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 10</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-9">previous</a>
           <a class="next" href="#slide-11">next</a>
         </div>
 
         <div id="slide-11">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_71.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 11
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_71.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 11</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-10">previous</a>
           <a class="next" href="#slide-12">next</a>
         </div>
 
         <div id="slide-12">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_072.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 12
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_072.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 12</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-11">previous</a>
           <a class="next" href="#slide-13">next</a>
         </div>
 
         <div id="slide-13">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_073.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 13
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_073.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 13</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-12">previous</a>
           <a class="next" href="#slide-14">next</a>
         </div>
 
         <div id="slide-14">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_074.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 14
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_074.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 14</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-13">previous</a>
           <a class="next" href="#slide-15">next</a>
         </div>
 
         <div id="slide-15">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_075.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 15
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_075.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 15</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-14">previous</a>
           <a class="next" href="#slide-16">next</a>
         </div>
 
         <div id="slide-16">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_076.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 16
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_076.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 16</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-15">previous</a>
           <a class="next" href="#slide-17">next</a>
         </div>
 
         <div id="slide-17">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_077.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 17
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_077.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 17</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-16">previous</a>
           <a class="next" href="#slide-18">next</a>
         </div>
 
         <div id="slide-18">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_078.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 18
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_078.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 18</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-17">previous</a>
           <a class="next" href="#slide-19">next</a>
         </div>
 
         <div id="slide-19">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_079.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 19
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_079.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 19</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-18">previous</a>
           <a class="next" href="#slide-20">next</a>
         </div>
 
         <div id="slide-20">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_080.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 20
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_080.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 20</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-19">previous</a>
           <a class="next" href="#slide-21">next</a>
         </div>
 
         <div id="slide-21">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_081.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 21
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_081.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 21</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-20">previous</a>
           <a class="next" href="#slide-22">next</a>
         </div>
 
         <div id="slide-22">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_082.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 22
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_082.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 22</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-21">previous</a>
           <a class="next" href="#slide-23">next</a>
         </div>
 
         <div id="slide-23">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_083.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 23
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_083.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 23</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-22">previous</a>
           <a class="next" href="#slide-24">next</a>
         </div>
 
         <div id="slide-24">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_084.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 24
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_084.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 24</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-23">previous</a>
           <a class="next" href="#slide-25">next</a>
         </div>
 
         <div id="slide-25">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_085.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 25
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_085.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 25</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-24">previous</a>
           <a class="next" href="#slide-26">next</a>
         </div>
 
         <div id="slide-26">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_086.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 26
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_086.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 26</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-25">previous</a>
           <a class="next" href="#slide-27">next</a>
         </div>
 
         <div id="slide-27">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_087.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 27
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_087.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 27</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-26">previous</a>
           <a class="next" href="#slide-28">next</a>
         </div>
 
         <div id="slide-28">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_088.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 28
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_088.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 28</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-27">previous</a>
           <a class="next" href="#slide-1">next</a>
         </div>
 
-
-
         <div id="slide-29">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_089.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 29
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_089.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 29</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-28">previous</a>
           <a class="next" href="#slide-30">next</a>
         </div>
 
         <div id="slide-30">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_090.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 30
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_090.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 20</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-29">previous</a>
           <a class="next" href="#slide-31">next</a>
         </div>
 
         <div id="slide-31">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_091.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 31
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_091.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 31</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-30">previous</a>
           <a class="next" href="#slide-32">next</a>
         </div>
 
         <div id="slide-32">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_092.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 32
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_092.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 32</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-31">previous</a>
           <a class="next" href="#slide-33">next</a>
         </div>
 
         <div id="slide-33">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_093.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 33
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_093.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 33</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-32">previous</a>
           <a class="next" href="#slide-34">next</a>
         </div>
 
         <div id="slide-34">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_094.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 34
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_094.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 34</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-33">previous</a>
           <a class="next" href="#slide-35">next</a>
         </div>
 
         <div id="slide-35">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_095.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 35
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_095.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 35</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-34">previous</a>
           <a class="next" href="#slide-36">next</a>
         </div>
 
         <div id="slide-36">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_096.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 36
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_096.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 36</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-35">previous</a>
           <a class="next" href="#slide-37">next</a>
         </div>
 
         <div id="slide-37">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_097.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 37
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_097.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 37</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-36">previous</a>
           <a class="next" href="#slide-38">next</a>
         </div>
 
         <div id="slide-38">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_098.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 38
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_098.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 38</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-37">previous</a>
           <a class="next" href="#slide-39">next</a>
         </div>
@@ -508,47 +706,70 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
 
 
         <div id="slide-39">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_099.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 39
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_099.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 39</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-38">previous</a>
           <a class="next" href="#slide-40">next</a>
         </div>
 
         <div id="slide-40">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_100.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 40
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_100.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 40</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-39">previous</a>
           <a class="next" href="#slide-41">next</a>
         </div>
 
         <div id="slide-41">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_101.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 41
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_101.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 41</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-40">previous</a>
           <a class="next" href="#slide-42">next</a>
         </div>
 
         <div id="slide-42">
-        <img src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_102.jpg" style="width:630px;">
+        <div class="slidenumber">
+        Slide 42
+        </div>
+        <img alt="" src="https://mitx-8s50.github.io/slides/L09/L07_slides/PCH_Jets_8S50_v2_Page_102.jpg" style="width:630px;">
+        <!--
           <div class="slide-text">
             <h3>Slide 42</h3>
             <p>test words here, a long sentence perhaps, even longer than that! still going, a paragraph even</p>
           </div>
+        -->
           <a class="prev" href="#slide-41">previous</a>
-          <a class="next" href="#slide-1">next</a>
+          <a class="next" href="#slide-43">next</a>
         </div>
 
-
-
+        <div id="slide-43">
+        <img alt="image sources" src="https://mitx-8s50.github.io/slides/L0_00_ref.png" style="width:786px;">
+          <a class="prev" href="#slide-42">previous</a>
+          <a class="next" href="#slide-1">next</a>
+        </div>
 
       </div>
       <!--links to slides-->
@@ -594,6 +815,7 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
       <a href="#slide-40">40</a>
       <a href="#slide-41">41</a>
       <a href="#slide-42">42</a>
+      <a href="#slide-43">ref</a>
 
     </div>
   </body>
