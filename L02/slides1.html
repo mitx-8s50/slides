@@ -24,7 +24,6 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
       a.prev,a.next {
         height:488px;
         position:absolute;
-        width:43px;
         top:0%;
         margin-top:0px;
         opacity:0.1;
@@ -37,10 +36,12 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
       }
       .prev {
         left:0;
+        width:44px;
         background: #000 url('https://mitx-8s50.github.io/slides/arrows.png') no-repeat -200px 230px;
       }
       .next {
         right:0;
+        width:43px;
         background: #000 url('https://mitx-8s50.github.io/slides/arrows.png') no-repeat -167px 230px;
       }
       .slide-text {
@@ -143,7 +144,7 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
             <p>Here are some words describing the slide. Is this readable? It's just html.</p>
           </div>
         -->
-          <a class="prev" href="#slide-8">previous</a>
+          <a class="prev" href="#slide-9">previous</a>
           <a class="next" href="#slide-2">next</a>
         </div>
 
@@ -249,6 +250,12 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
           </div>
         -->
           <a class="prev" href="#slide-7">previous</a>
+          <a class="next" href="#slide-9">next</a>
+        </div>
+
+        <div id="slide-9">
+        <img alt="image sources" src="https://mitx-8s50.github.io/slides/L0_00_ref.png" style="width:786px;">
+          <a class="prev" href="#slide-8">previous</a>
           <a class="next" href="#slide-1">next</a>
         </div>
       </div>
@@ -261,6 +268,7 @@ https://frontendscript.com/html-slideshow-code-without-javascript/
       <a href="#slide-6">6</a>
       <a href="#slide-7">7</a>
       <a href="#slide-8">8</a>
+      <a href="#slide-9">ref</a>
 
     </div>
   </body>
